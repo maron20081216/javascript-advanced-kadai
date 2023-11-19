@@ -116,12 +116,12 @@ const timer = () => {
     count.textContent = time;
     
     // カウントが5秒以下になったら
-    if(time <= 5) {
+    if(time > 0 && time <= 5) {
       count.style.color = 'red';
     }
     
     // カウントが0になったら
-    if(time <= 0) {
+    if(time = 0) {
       // 「タイムアップ！」と表示する
       typedfield.textContent = '';
       untypedfield.textContent = 'タイムアップ！';
